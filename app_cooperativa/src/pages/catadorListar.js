@@ -42,7 +42,7 @@ export default function listaCatador({navigation}){
            <Text style={styles.titulo}>CATADORES CADASTRADOS</Text>
            
            <ScrollView>
-           {solicitacoes.map(solicitacao => <Catador style={styles.solicitacao} key={solicitacao._id} solicitacao={solicitacao}/>)}
+           {solicitacoes.map(catador => <Catador style={styles.catador} key={catador._id} catador={catador}/>)}
               
            </ScrollView>
         </View>

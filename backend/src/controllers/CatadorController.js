@@ -37,8 +37,8 @@ module.exports = {
         const {  nomeCatador, apelido,telefone, dtAdmissao, cpf, rg, dtNascimento, status,login, senha, _id_usuario } = req.body;
         const catador = await Catador.findById(_id);
 	
-	catador.nomeCatador = nomeCatador;
-	catador.apelido = apelido;
+	    catador.nomeCatador = nomeCatador;
+	    catador.apelido = apelido;
         catador.telefone = telefone;
         catador.dtAdmissao = dtAdmissao;
         catador.cpf = cpf;

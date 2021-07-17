@@ -23,7 +23,7 @@ function ListarCatador({ catador }) {
                 senha,
                 
             })
-            navigation.navigate('Lista de catadores');
+            navigation.navigate('Lista de Catadores');
         }
 
 
@@ -35,23 +35,23 @@ function ListarCatador({ catador }) {
                 <Text style={styles.dados}> Data de Admissão: {catador.dtAdmissao}</Text>
                 <Text style={styles.dados}> STATUS: {catador.status}</Text>
 
-                { solicitacao.status == '1' && 
-                   solicitacao.status == 'desbloqueado'
+                { catador.status == '1' && 
+                   catador.status == 'desbloqueado'
                 }
 
-                { solicitacao.status == '0' && 
-                    solicitacao.status == 'bloqueado'
+                { catador.status == '0' && 
+                    catador.status == 'bloqueado'
                 }
 
                 
                
-                {  solicitacao.status == '1' &&
+                {  catador.status == '1' &&
                     <TouchableOpacity  style={styles.button1}>
                         <Text style={styles.buttonText}>Bloquear</Text>          
                     </TouchableOpacity>          
                 }
 
-                { solicitacao.status == '0' &&
+                { catador.status == '0' &&
                     <TouchableOpacity  style={styles.button1}>
                         <Text style={styles.buttonText}>Desbloquear</Text>          
                     </TouchableOpacity>          
