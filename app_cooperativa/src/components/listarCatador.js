@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { View,deleteText,handleSubmit, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
+//não esta pegando o status inativo, nem esta funcionando o botão bloquear
+//não esta logando catador como usuário
+
 
 function ListarCatador({ catador }) {
 
