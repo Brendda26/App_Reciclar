@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 
+//não esta pegando o status inativo, nem esta funcionando o botão bloquear
+//não esta logando catador como usuário
+//observar que o status não esta pegando o zero/inativo
 
 
 const CatadorSchema = new mongoose.Schema({
